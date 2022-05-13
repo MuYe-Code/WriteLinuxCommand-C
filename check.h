@@ -1,4 +1,4 @@
-#ifndef _CHECK_H_                                                  
+#ifndef _CHECK_H_
 #define _CHECK_H_
 
 #include <stdio.h>
@@ -12,6 +12,9 @@
 #include <grp.h>
 #include <time.h>
 #include <stdbool.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <libgen.h>
 
 
 #define ARGS_CHECK(argc,num) {\
@@ -30,3 +33,4 @@
 
 
 #endif
+
