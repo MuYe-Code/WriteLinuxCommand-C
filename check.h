@@ -15,7 +15,9 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <libgen.h>
-
+#include <wait.h>
+#include <sys/shm.h>
+#include <sys/ipc.h>
 
 #define ARGS_CHECK(argc,num) {\
     if(argc!=num){\
